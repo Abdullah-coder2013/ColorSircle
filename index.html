@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <canvas id="screen" width="1720" height="880" onclick="draw(event)"></canvas>
+    <canvas id="screen" width="1720" height="820" onclick="draw(event)" onmousewheel="draw(event)"></canvas>
     <script>
+        alert("Click Anywhere!")
         function randcolor() {
             var r = Math.round(Math.random() * 240 + 16);
             var g = Math.round(Math.random() * 240 + 16);
