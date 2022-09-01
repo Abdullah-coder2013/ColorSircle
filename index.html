@@ -13,6 +13,7 @@
     <canvas id="screen" width="1720" height="820" onclick="draw(event)" onmousewheel="draw(event)"></canvas>
     <script>
         alert("Click Anywhere!")
+        var normal = true
         function randcolor() {
             var r = Math.round(Math.random() * 240 + 16);
             var g = Math.round(Math.random() * 240 + 16);
@@ -29,8 +30,12 @@
             var posy = e.clientY - rect.top;
             ctx.fillStyle = randcolor();
             ctx.beginPath();
-            ctx.arc(posx, posy, 50, 0, Math.PI * 2);
+            ctx.arc(posx, posy, Math.floor(Math.random() * 100), 0, Math.PI * 2);
             ctx.fill();
+        }
+
+        if (normal == false) {
+
         }
     </script>
 </body>
