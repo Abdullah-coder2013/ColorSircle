@@ -1,6 +1,5 @@
-
-
 var balls = [];
+alert("Click Anywhere!")
 setInterval(animate, 33);
 
 class Ball {
