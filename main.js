@@ -37,7 +37,7 @@ class Ball {
 
 
 
-alert("Click Anywhere!")
+alert("Enjoy the Animation!")
 var normal = true
 function randcolor() {
     var r = Math.round(Math.random() * 240 + 16);
