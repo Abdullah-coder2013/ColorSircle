@@ -3,8 +3,23 @@ body {
 }
 
 canvas {
-    background-color: rgba(36, 33, 33, 0.938);
+    /* background-color: rgba(36, 33, 33, 0.938); */
     width: 1720px;
-    margin: 0 auto;
+}
 
+button {
+    transition: all 1s;
+    background-color: rgb(33, 30, 30);
+    color: whitesmoke;
+    padding: 15px;
+}
+
+button:hover {
+    transform: translateY(-5);
+    background-color: rgb(22, 19, 19);
+    color: whitesmoke;
+}
+
+button:active {
+    background-color: red;
 }
