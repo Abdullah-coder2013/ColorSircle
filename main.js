@@ -7,8 +7,8 @@ class Ball {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.vx = Math.floor(Math.random() * 20 - 10);
-        this.vy = Math.floor(Math.random() * 20 - 10);
+        this.vx = Math.floor(Math.random() * 20);
+        this.vy = Math.floor(Math.random() * 20);
         this.color = randcolor();
         this.size = randsize();
     }
@@ -19,7 +19,7 @@ class Ball {
         ctx.fillStyle = this.color;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        console.log("a circle has spawned at cordinates: " + this.x + " " + this.y);
+        console.log("a circle has spawned at coordinates: " + this.x + " " + this.y);
         ctx.fill();
     }
     update() {
