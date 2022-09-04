@@ -13,7 +13,7 @@ class Ball {
         if (this.vx == 0 && this.vy == 0) {
             this.vx = 1; this.vy = 1;
         }
-        this.size = Math.round(Math.random() * 50 + 10);
+        this.size = Math.round(Math.random() * 100 + 10);
         var canvas = document.getElementById("screen");
         if (this.x + this.size > canvas.width)
             this.x = this.x - this.size;
