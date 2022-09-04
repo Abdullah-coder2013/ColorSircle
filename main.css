@@ -3,7 +3,7 @@ body {
 }
 
 canvas {
-    /* background-color: rgba(36, 33, 33, 0.938); */
+    background-color: rgba(36, 33, 33, 0.938);
     width: 1720px;
 }
 
