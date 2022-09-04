@@ -48,7 +48,7 @@ function randcolor() {
 }
 
 function randsize() {
-    size = Math.floor(Math.random() * 100);
+    size = Math.floor(Math.random() * 100 + 10);
     return size;
 }
 
