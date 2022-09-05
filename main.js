@@ -1,6 +1,6 @@
 var balls = [];
 alert("Click Anywhere!")
-setInterval(animate, 33);
+setInterval(animate, 30);
 
 class Ball {
     constructor(x, y) {
@@ -68,7 +68,6 @@ function animate() {
     for (var n = 0; n < balls.length; n++) {
         balls[n].update();
         balls[n].draw();
-
     }
 }
 
