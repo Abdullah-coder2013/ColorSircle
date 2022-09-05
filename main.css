@@ -12,6 +12,7 @@ button {
     display: inline-block;
     position: relative;
     font-family: sans-serif;
+    border: 1px solid black;
     border-radius: 25px;
     text-decoration: none;
     padding: .2em;
