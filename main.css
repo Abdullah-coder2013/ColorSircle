@@ -23,6 +23,11 @@ button {
     cursor: pointer;
 }
 
+.btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
 button:hover {
     background-color: #dc2f02;
 }

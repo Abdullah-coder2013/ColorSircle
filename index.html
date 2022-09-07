@@ -20,8 +20,10 @@
 <body>
 
     <script src="main.js"></script>
-
-    <button type="button" onclick="clears(); clear()" id="a">Clear</button> <br>
+    <div class="btn">
+        <button type="button" onclick="clears(); clear()" id="a">Clear</button> <br>
+        <button type="button" id="b" onclick="changeColor()">Change Color</button> <br>
+    </div>
     <div class="mainscreenthingy">
         <canvas id="screen" width="1720px" height="880px" onmouseup="draw(event)"></canvas>
     </div>

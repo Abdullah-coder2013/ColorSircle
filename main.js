@@ -1,3 +1,4 @@
+var buttonb = document.getElementById('b');
 var balls = [];
 alert("Click Anywhere!")
 setInterval(animate, 30);
@@ -40,6 +41,9 @@ class Ball {
         if (this.y < 0 + this.size || this.y > canvas.height - this.size)
             this.vy = -this.vy;
     }
+    changeColorInClass() {
+        this.color = randColor();
+    }
 }
 
 function randColor() {
@@ -73,4 +77,9 @@ function animate() {
 
 function clears() {
     balls = [];
+}
+function changeColor() {
+    for (var i = 0; i < balls.length; i++) {
+        balls[i].changeColorInClass()
+    }
 }

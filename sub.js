@@ -1,4 +1,5 @@
 var mainfocus = document.getElementById("a");
+var buttonb = document.getElementById("b");
 
 
 function randcolorgenerate() {
@@ -14,3 +15,9 @@ mainfocus.addEventListener('click', function onClick() {
     mainfocus.style.backgroundColor = randcolorgenerate();
     mainfocus.style.color = randcolorgenerate();
 });
+
+buttonb.addEventListener('click', function onClick() {
+    buttonb.style.backgroundColor = randcolorgenerate();
+    buttonb.style.color = randcolorgenerate();
+});
+
