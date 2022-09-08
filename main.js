@@ -44,6 +44,9 @@ class Ball {
     changeColorInClass() {
         this.color = randColor();
     }
+    changeSizeInClass() {
+        this.size = Math.round(Math.random() * 100 + 10);
+    }
 }
 
 function randColor() {
@@ -81,5 +84,10 @@ function clears() {
 function changeColor() {
     for (var i = 0; i < balls.length; i++) {
         balls[i].changeColorInClass()
+    }
+}
+function changeSize() {
+    for (var i = 0; i < balls.length; i++) {
+        balls[i].changeSizeInClass()
     }
 }
