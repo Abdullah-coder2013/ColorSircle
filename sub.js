@@ -30,6 +30,22 @@ buttonb.addEventListener('click', function onClick() {
 });
 
 buttonc.addEventListener('click', function onClick() {
-    buttonb.style.backgroundColor = randcolorgenerate();
-    buttonb.style.color = randcolorgenerate();
+    buttonc.style.backgroundColor = randcolorgenerate();
+    buttonc.style.color = randcolorgenerate();
 });
+
+$("#a").hover(
+    function () {
+        $(this).css("background-color", randcolorgenerate());
+    }
+);
+$("#b").hover(
+    function () {
+        $(this).css("background-color", randcolorgenerate());
+    }
+);
+$("#c").hover(
+    function () {
+        $(this).css("background-color", randcolorgenerate());
+    }
+);
