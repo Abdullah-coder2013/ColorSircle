@@ -29,3 +29,7 @@ buttonb.addEventListener('click', function onClick() {
     buttonb.style.color = randcolorgenerate();
 });
 
+buttonc.addEventListener('click', function onClick() {
+    buttonb.style.backgroundColor = randcolorgenerate();
+    buttonb.style.color = randcolorgenerate();
+});
