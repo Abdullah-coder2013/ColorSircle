@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/tailwind.css">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
     <title>Game</title>
 </head>
 
-<body>
 
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <div class="btn">
-        <button type="button" onclick="clears(); clear()" id="a">Clear Screen</button> <br>
-        <button type="button" id="b" onclick="changeColor()">Change Ball Color</button> <br>
-        <button type="button" id="c" onclick="changeSize()">Change Ball Size</button> <br>
+<body>
+    <div class="flex justify-center items-center border-slate-300 flex-col">
+        <div class="flex flex-row">
+            <button type="button" id="clear"
+                class="transition duration-300 rounded-xl shadow-2xl">Clear</button>
+        </div>
+        <canvas id="screen" width="1720px" height="880px" class="rounded-xl shadow-xl"></canvas>
     </div>
-    <div class="mainscreenthingy">
-        <canvas id="screen" width="1720px" height="880px" onmouseup="draw(event)"></canvas>
-    </div>
-    <script src="sub.js"></script>
-    <a href="https://github.com/Abdullah-coder2013/ColorSircle">My Github</a>
+    <script src="./src/main.js"></script>
+    <script src="./src/sub.js"></script>
 </body>
 
 </html>

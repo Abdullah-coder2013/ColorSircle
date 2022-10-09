@@ -70,7 +70,13 @@ function animate() {
     var canvas = document.getElementById("screen");
     var ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "#000000";
+    let matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (matched) {
+        ctx.fillStyle = "#000000"
+    }
+    else {
+        ctx.fillStyle = "#F4F4F4";
+    }
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     for (var n = 0; n < balls.length; n++) {
         balls[n].update();
@@ -91,3 +97,8 @@ function changeSize() {
         balls[i].changeSizeInClass()
     }
 }
+
+document.getElementById("clear").addEventListener("click", function(){
+    clears()
+    console.clear()
+})

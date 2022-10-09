@@ -1,0 +1,19 @@
+{
+  "name": "colorscircle",
+  "version": "1.0.0",
+  "description": "This is a Program that lets you draw colorful Circles in the Browser!",
+  "main": "main.js",
+  "scripts": {
+    "build:css": "tailwind build -i ./src/main.css -o ./dist/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah-coder2013/colorscircle.git"
+  },
+  "author": "Abdullah Bin Abdul Munim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdullah-coder2013/colorscircle/issues"
+  },
+  "homepage": "https://github.com/Abdullah-coder2013/colorscircle#readme"
+}
