@@ -69,13 +69,13 @@ function draw(e) {
 function animate() {
     var canvas = document.getElementById("screen");
     var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
     let matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
     if (matched) {
         ctx.fillStyle = "#000000"
     }
     else {
-        ctx.fillStyle = "#F4F4F4";
+        ctx.fillStyle = "#ffffff";
     }
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     for (var n = 0; n < balls.length; n++) {
@@ -102,3 +102,11 @@ document.getElementById("clear").addEventListener("click", function(){
     clears()
     console.clear()
 })
+
+document.getElementById("color").addEventListener("click", function () {
+  changeColor()
+});
+
+document.getElementById("size").addEventListener("click", function () {
+  changeSize()
+});

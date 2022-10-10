@@ -11,13 +11,14 @@
 </head>
 
 
-<body>
-    <div class="flex justify-center items-center border-slate-300 flex-col">
-        <div class="flex flex-row">
-            <button type="button" id="clear"
-                class="transition duration-300 rounded-xl shadow-2xl">Clear</button>
-        </div>
-        <canvas id="screen" width="1720px" height="880px" class="rounded-xl shadow-xl"></canvas>
+<body class="flex flex-col">
+    <div class="flex flex-row justify-evenly">
+        <button type="button" id="clear" class="hover:bg-black transition duration-300 rounded-xl shadow-2xl">Clear</button>
+        <button type="button" id="color" class="hover:bg-black transition duration-300 rounded-xl shadow-2xl">Change Color</button>
+        <button type="button" id="size" class="hover:bg-black transition duration-300 rounded-xl shadow-2xl">Change Size</button>
+    </div>
+    <div class="flex justify-center items-center border-slate-300 flex-col" id="main">
+        <canvas id="screen" class="rounded-xl shadow-xl"></canvas>
     </div>
     <script src="./src/main.js"></script>
     <script src="./src/sub.js"></script>
