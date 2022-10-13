@@ -35,12 +35,14 @@ function randcolor() {
     return r.toString(16) + g.toString(16) + b.toString(16);
 }
 
-function screensizer() {
-  screenss.style.width = `${window.innerWidth - 100}px`;
-  screenss.style.height = `${window.innerHeight - 100}px`;
-}
-mainstuff.style.width = `${window.innerWidth}px`;
-mainstuff.style.height = `${window.innerHeight}px`;
-screensizer()
+// function screensizer() {
+//   screenss.style.width = `${window.innerWidth - 100}px`;
+//   screenss.style.height = `${window.innerHeight - 100}px`;
+// }
+// // s
+// screensizer()
+
+darkmodebutton = document.getElementById('dm');
+
 
 
